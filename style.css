@@ -1,0 +1,390 @@
+/* Remove all Margins */
+* {
+	margin: 0;
+}
+
+/* Basic font setup, background */
+body {
+	position:relative;
+	background : #FFFFFF repeat url(images/background.gif);
+	font: 62.5% Geneva, Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+a:link, a:visited {
+	color:#555;
+	white-space: nowrap;
+} 
+a:hover, a:active {
+	color:#FFF;
+	background-color:#000;
+	text-decoration:none;
+}
+acronym {
+	border: none;
+	color:#555;
+}
+a:hover acronym {
+	color:#fff;
+}	
+
+/* Header/Menubar */
+h1 {
+	position: absolute;
+	background: url(images/header.gif) no-repeat #FFF;
+	width: 175px;
+	height: 19px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	z-index:100;
+}
+h1 span {
+	display: none;
+}
+
+/* Set standard font size to 12px, but allow scaling */
+#container {
+	font-size: 1.2em;
+}
+
+/* Stickies (Uses attribute selectors as an alternative to < IE7 Win and Mac :hover issues) */
+h2 {
+	position:relative;
+	width: 173px;
+	height: 29px;
+	top: 35px;
+	margin-left:20px;
+	z-index:5;
+	background: url(images/h2.gif) no-repeat #fff;
+	border: 1px solid #000;
+
+}
+html[xmlns] h2 {
+	background: url(images/h2.gif) no-repeat #fff bottom left;
+	border: 1px dotted #000;
+
+}
+html[xmlns] h2:hover {
+	background: url(images/h2.gif) no-repeat #fff;
+	border: 1px solid #000;
+}
+h2 span {
+	display: none;
+}
+#quickSummary {
+	position: relative;
+	margin-top:25px;
+	margin-left:50px;
+	width:480px;
+	padding-top:6px;
+	background: url(images/stickies_top.gif) no-repeat #fff;
+	border: 1px solid #000;
+	z-index:4;
+}
+#quickSummary p.p2{
+	background: url(images/stickies_corner.gif) no-repeat right bottom #fff;
+}
+html[xmlns] #quickSummary p.p2{
+	background: none;
+}
+html[xmlns] #quickSummary {
+		background: #fff;
+		border: 1px solid transparent;
+
+}
+html[xmlns] #quickSummary:hover {
+	z-index:100;
+	background: url(images/stickies_top.gif) no-repeat #fff;
+	border: 1px solid #000;
+}
+html[xmlns] #quickSummary:hover p.p2{
+	background: url(images/stickies_corner.gif) no-repeat right bottom #fff;
+}
+#quickSummary p{
+	padding: .3em .4em;
+}
+
+/* SimpleText Windows */
+#preamble, #explanation, #participation, #benefits, #requirements {
+	position: relative;
+	background: #FFF url(images/bottom.gif) no-repeat center bottom;
+	width: 509px;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	margin-left: 20px;
+	margin-top:20px;
+	z-index: 10;
+	padding-bottom: 15px;
+}
+
+/* SimpleText Titlebars */
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	height: 17px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: none;
+}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {
+	padding: .3em .4em;
+	border-right: 1px solid #000;
+	margin-right: 14px;
+}
+
+/* Titlebar hovers with attrib hack */
+#preamble h3 {
+	background: url(images/preamble.gif) no-repeat bottom left;
+}
+#preamble[id] h3 {
+	background: url(images/preamble.gif) no-repeat;
+}
+#preamble:hover h3{
+	background: url(images/preamble.gif) no-repeat bottom left;
+}
+#explanation h3 {
+	background: url(images/explanation.gif) no-repeat bottom left;
+}
+#explanation[id] h3 {
+	background: url(images/explanation.gif) no-repeat;
+}
+#explanation:hover h3{
+	background: url(images/explanation.gif) no-repeat bottom left;
+}
+#participation h3 {
+	background: url(images/participation.gif) no-repeat bottom left;
+}
+#participation[id] h3 {
+	background: url(images/participation.gif) no-repeat;
+}
+#participation:hover h3{
+	background: url(images/participation.gif) no-repeat bottom left;
+}
+#benefits h3 {
+	background: url(images/benefits.gif) no-repeat bottom left;
+}
+#benefits[id] h3 {
+	background: url(images/benefits.gif) no-repeat;
+}
+#benefits:hover h3{
+	background: url(images/benefits.gif) no-repeat bottom left;
+}
+#requirements h3 {
+	background: url(images/requirements.gif) no-repeat bottom left;
+}
+#requirements[id] h3 {
+	background: url(images/requirements.gif) no-repeat;
+}
+#requirements:hover h3{
+	background: url(images/requirements.gif) no-repeat bottom left;
+}
+
+/* "File" List */
+#lselect, #larchives, #lresources {
+	font-size:.8em;
+	line-height: 16px;
+	position: relative;
+	background: #FFF url(images/bottom.gif) no-repeat center bottom;
+	width: 509px;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	margin-left: 20px;
+	margin-top:20px;
+	z-index: 10;
+	padding-bottom: 15px;
+}
+#lselect h3, #larchives h3, #lresources h3 {
+	height: 38px;
+}
+#lselect h3 span, #larchives h3 span, #lresources h3 span{
+	display: none;
+}
+#lselect ul, #larchives ul, #lresources ul {
+	padding-left: 22px;
+	border-right: 1px solid #000;
+	margin-right: 14px;
+}
+#lselect h3{
+	background: url(images/designs.gif) no-repeat bottom left;
+}
+#lselect[id] h3 {
+	background: url(images/designs.gif) no-repeat;
+}
+#lselect:hover h3{
+	background: url(images/designs.gif) no-repeat bottom left;
+}
+#larchives h3 {
+	background: url(images/archives.gif) no-repeat bottom left;
+}
+#larchives[id] h3 {
+	background: url(images/archives.gif) no-repeat;
+}
+#larchives:hover h3{
+	background: url(images/archives.gif) no-repeat bottom left;
+}
+#lresources h3 {
+	background: url(images/resources.gif) no-repeat bottom left;
+}
+#lresources[id] h3 {
+	background: url(images/resources.gif) no-repeat;
+}
+#lresources:hover h3{
+	background: url(images/resources.gif) no-repeat bottom left;
+}
+li a:link{
+	color:#000;
+	text-decoration:none;
+
+}
+li a:hover{
+	color:#000;
+	background: none;
+	text-decoration:underline;
+}
+li {
+	width:20em;
+	padding-left: 15px;
+	list-style: none;
+	background: url(images/file.gif) no-repeat 0px 3px;
+}
+
+li a:hover:first-child{
+	color:#FFF;
+	background-color:#000;
+	text-decoration:none;
+}
+li acronym {
+	color:#000;
+}
+li:hover {
+	background: url(images/file_over.gif) no-repeat 0px 3px;
+}
+
+/* Selective Icons (With crappy generic icons for IE) */
+#footer {
+	font-size: 9px;
+	position: absolute;
+	top:30px;
+	right: 30px;
+	width: 25px;
+	height: 97%;
+}
+#footer a:link, #footer a:visited{
+	color: #000;
+	text-decoration: none;
+	display: block;
+	background: url(images/generic.gif) no-repeat;
+	height:32px;
+	text-align:center;
+	line-height: 26px;
+	letter-spacing:-1px
+	outline: none;
+}
+#footer a:hover, #footer a:active {
+	color: #fff;
+	background: url(images/generic.gif) no-repeat bottom left;
+}	
+#footer[id] {
+	position: absolute;
+	top:28px;
+	right: 25px;
+	z-index:1;
+	height: 97%;
+	width: 32px;
+}
+#footer[id] a {
+	font-size: 0;
+	color: transparent;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-bottom:-5px;
+	text-decoration: none;
+	outline: none;
+}
+#footer[id] a[href="http://validator.w3.org/check/referer"] {
+	background: url(images/xhtml.gif) no-repeat;
+	width:32px;
+	height:44px;
+}
+#footer[id] a[href="http://validator.w3.org/check/referer"]:hover {
+	background: url(images/xhtml.gif) no-repeat bottom left;
+}
+#footer[id] a[href="http://jigsaw.w3.org/css-validator/check/referer"] {
+	background: url(images/css.gif) no-repeat;
+	width:31px;
+	height:41px;
+}
+#footer[id] a[href="http://jigsaw.w3.org/css-validator/check/referer"]:hover {
+	background: url(images/css.gif) no-repeat bottom left;
+}
+/* No respect for copyrights here, apparently */
+#footer[id] a[href="http://creativecommons.org/licenses/by-nc-sa/1.0/"] {
+	background: url(images/cc.gif) no-repeat;
+	width:30px;
+	height:44px;
+	position: absolute;
+	bottom: 0;
+}
+#footer[id] a[href="http://creativecommons.org/licenses/by-nc-sa/1.0/"]:hover {
+	background: url(images/cc.gif) no-repeat bottom left;
+}
+#footer[id] a[href="http://creativecommons.org/licenses/by-nc-sa/1.0/"]:visited {
+	background: url(images/cc_full.gif) no-repeat;
+}
+#footer[id] a[href="http://creativecommons.org/licenses/by-nc-sa/1.0/"]:visited:hover {
+	background: url(images/cc_full.gif) no-repeat bottom left;
+}
+#footer[id] a[href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http:%2F%2Fcsszengarden.com%2F"] {
+	background: url(images/508.gif) no-repeat;
+	width:25px;
+	height:44px;
+}
+#footer[id] a[href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http:%2F%2Fcsszengarden.com%2F"]:hover {
+	background: url(images/508.gif) no-repeat bottom left;
+}
+#footer[id] a[href="http://mezzoblue.com/zengarden/faq/#aaa"] {
+	background: url(images/aaa.gif) no-repeat;
+	width:32px;
+	height:37px;
+}
+#footer[id] a[href="http://mezzoblue.com/zengarden/faq/#aaa"]:hover {
+	background: url(images/aaa.gif) no-repeat bottom left;
+}
+
+/* Clock and bottom corners */
+#extraDiv1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: no-repeat url(images/time.gif) right #fff;
+	width: 100%;
+	height: 19px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	z-index:2;
+}
+#extraDiv6 {
+	height:5px;
+	width:5px;
+	background: url(images/corner_bl.gif) no-repeat left;
+	}
+#extraDiv5 {
+	float:right;
+	height:5px;
+	width:100%;
+	background: url(images/corner_br.gif) no-repeat right;
+}
